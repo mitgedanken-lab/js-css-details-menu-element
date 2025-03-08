@@ -10,13 +10,16 @@
 		"args": { "VARIANT": "16" }
 	},
 
-	// Set *default* container specific settings.json values on container create.
-	"settings": {},
-
 	// Add the IDs of extensions you want installed when the container is created.
-	"extensions": [
-		"dbaeumer.vscode-eslint"
-	],
+	"customizations": {
+		"vscode": {
+			"devPort": 9999,
+			"extensions": [
+				"dbaeumer.vscode-eslint"
+			],
+			"settings": {}
+		}
+	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
